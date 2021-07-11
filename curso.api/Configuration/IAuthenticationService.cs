@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace curso.api.Configuration
+﻿namespace curso.api.Configurations
 {
-    public class IAuthenticationService
+    public interface IAuthenticationService
     {
+        string GerarToken(UsuarioViewModelOutput usuarioViewModelOutput);
     }
 }
